@@ -4,4 +4,5 @@ AccumulationRegisters\ОстаткиТоваров.xml-->AccumulationRegisters\�
 Catalogs\Склады.xml-->Catalogs\Склады.xml
 Catalogs\Товары.xml-->Catalogs\Товары.xml
 Documents\ПриходнаяНакладная.xml-->Documents\ПриходнаяНакладная.xml
+Documents\ПриходнаяНакладная\Ext\ObjectModule.bsl-->Documents\ПриходнаяНакладная\Ext\ObjectModule.bsl
 Languages\Русский.xml-->Languages\Русский.xml

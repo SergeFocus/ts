@@ -9,12 +9,13 @@
 		<Metadata name="Catalog.Склады" id="cdbed6cb-79b9-4080-a45a-0b8a62b88580" configVersion="39f073260d2f5f4498b190af5ffdd2f200000000"/>
 		<Metadata name="Catalog.Товары" id="d23c2494-5986-466f-bdd5-ea91ef80ee16" configVersion="f0d125addc20664da513b391053dcc3b00000000"/>
 		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="f8b025a095d2ad4e8d48649874b6a1a600000000"/>
-		<Metadata name="Document.ПриходнаяНакладная" id="ab57524b-f701-4525-93f5-ecbcb67a959e" configVersion="11c3e333b7d1b543951a34420e8b0f0700000000">
+		<Metadata name="Document.ПриходнаяНакладная" id="ab57524b-f701-4525-93f5-ecbcb67a959e" configVersion="ee2393c09bf3db4b84c44f48e692ec0600000000">
 			<Metadata name="Document.ПриходнаяНакладная.Attribute.Склад" id="097a8004-d59c-4a8c-8c88-2ceabee2d32a"/>
 			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Количество" id="0b017ddd-3a3a-4bc2-ac9b-9fa760af58ca"/>
 			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Товар" id="9ddc48fa-d97e-46e5-9ce1-864b5725a462"/>
 			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары" id="b9f111d0-08cb-450c-89a0-58646cd15a05"/>
 		</Metadata>
+		<Metadata name="Document.ПриходнаяНакладная.ObjectModule" id="ab57524b-f701-4525-93f5-ecbcb67a959e.0" configVersion="ce7a820234fdb84087a878514103660300000000"/>
 		<Metadata name="Language.Русский" id="e2981bd7-7fdf-4548-a1cb-4c805ad4b6dd" configVersion="a8c981838915da4ab6124cefb146d08500000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
