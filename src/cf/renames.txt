@@ -1,3 +1,7 @@
 ﻿ConfigDumpInfo.xml-->ConfigDumpInfo.xml
 Configuration.xml-->Configuration.xml
+AccumulationRegisters\ОстаткиТоваров.xml-->AccumulationRegisters\ОстаткиТоваров.xml
+Catalogs\Склады.xml-->Catalogs\Склады.xml
+Catalogs\Товары.xml-->Catalogs\Товары.xml
+Documents\ПриходнаяНакладная.xml-->Documents\ПриходнаяНакладная.xml
 Languages\Русский.xml-->Languages\Русский.xml

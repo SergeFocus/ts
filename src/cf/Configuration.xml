@@ -118,6 +118,10 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Catalog>Товары</Catalog>
+			<Catalog>Склады</Catalog>
+			<Document>ПриходнаяНакладная</Document>
+			<AccumulationRegister>ОстаткиТоваров</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

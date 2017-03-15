@@ -1,7 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
 	<ConfigVersions>
-		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="3efb1a1da8e7a24c8066b418c36aa83d00000000"/>
+		<Metadata name="AccumulationRegister.ОстаткиТоваров" id="c6841131-46fa-4b05-bbcf-6ffbe9057982" configVersion="efc874e4b446eb49935689a8789130da00000000">
+			<Metadata name="AccumulationRegister.ОстаткиТоваров.Resource.Количество" id="45599c95-c741-4f36-950b-8f61f9a0e258"/>
+			<Metadata name="AccumulationRegister.ОстаткиТоваров.Dimension.Склад" id="d42ba926-2193-41b6-a685-b96c0232e33d"/>
+			<Metadata name="AccumulationRegister.ОстаткиТоваров.Dimension.Товар" id="eb853b0c-a59e-4f78-bb31-beba143f7827"/>
+		</Metadata>
+		<Metadata name="Catalog.Склады" id="cdbed6cb-79b9-4080-a45a-0b8a62b88580" configVersion="39f073260d2f5f4498b190af5ffdd2f200000000"/>
+		<Metadata name="Catalog.Товары" id="d23c2494-5986-466f-bdd5-ea91ef80ee16" configVersion="f0d125addc20664da513b391053dcc3b00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="f8b025a095d2ad4e8d48649874b6a1a600000000"/>
+		<Metadata name="Document.ПриходнаяНакладная" id="ab57524b-f701-4525-93f5-ecbcb67a959e" configVersion="11c3e333b7d1b543951a34420e8b0f0700000000">
+			<Metadata name="Document.ПриходнаяНакладная.Attribute.Склад" id="097a8004-d59c-4a8c-8c88-2ceabee2d32a"/>
+			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Количество" id="0b017ddd-3a3a-4bc2-ac9b-9fa760af58ca"/>
+			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Товар" id="9ddc48fa-d97e-46e5-9ce1-864b5725a462"/>
+			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары" id="b9f111d0-08cb-450c-89a0-58646cd15a05"/>
+		</Metadata>
 		<Metadata name="Language.Русский" id="e2981bd7-7fdf-4548-a1cb-4c805ad4b6dd" configVersion="a8c981838915da4ab6124cefb146d08500000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
