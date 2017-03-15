@@ -5,4 +5,6 @@ Catalogs\Склады.xml-->Catalogs\Склады.xml
 Catalogs\Товары.xml-->Catalogs\Товары.xml
 Documents\ПриходнаяНакладная.xml-->Documents\ПриходнаяНакладная.xml
 Documents\ПриходнаяНакладная\Ext\ObjectModule.bsl-->Documents\ПриходнаяНакладная\Ext\ObjectModule.bsl
+Documents\ПриходнаяНакладная\Forms\ФормаДокумента.xml-->Documents\ПриходнаяНакладная\Forms\ФормаДокумента.xml
+Documents\ПриходнаяНакладная\Forms\ФормаДокумента\Ext\Form.xml-->Documents\ПриходнаяНакладная\Forms\ФормаДокумента\Ext\Form.xml
 Languages\Русский.xml-->Languages\Русский.xml
