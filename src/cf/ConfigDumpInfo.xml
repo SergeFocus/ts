@@ -1,32 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
 	<ConfigVersions>
-		<Metadata name="AccumulationRegister.ОстаткиТоваров" id="c6841131-46fa-4b05-bbcf-6ffbe9057982" configVersion="efc874e4b446eb49935689a8789130da00000000">
-			<Metadata name="AccumulationRegister.ОстаткиТоваров.Resource.Количество" id="45599c95-c741-4f36-950b-8f61f9a0e258"/>
-			<Metadata name="AccumulationRegister.ОстаткиТоваров.Dimension.Склад" id="d42ba926-2193-41b6-a685-b96c0232e33d"/>
-			<Metadata name="AccumulationRegister.ОстаткиТоваров.Dimension.Товар" id="eb853b0c-a59e-4f78-bb31-beba143f7827"/>
-		</Metadata>
-		<Metadata name="Catalog.Склады" id="cdbed6cb-79b9-4080-a45a-0b8a62b88580" configVersion="6b83e9f5b9c8e349ba02d5089fd3710500000000"/>
-		<Metadata name="Catalog.Склады.Form.ФормаЭлемента" id="82b030fd-a53e-4e61-b774-a68eca65600e" configVersion="ca1b43213e6b9949a39f2ef4ff00d54f00000000"/>
-		<Metadata name="Catalog.Склады.Form.ФормаЭлемента.Form" id="82b030fd-a53e-4e61-b774-a68eca65600e.0" configVersion="85227351fbd65a4dbd573e9d84ff647600000000"/>
-		<Metadata name="Catalog.Товары" id="d23c2494-5986-466f-bdd5-ea91ef80ee16" configVersion="b4c58f3916663749b1b686bc1f70edd100000000"/>
-		<Metadata name="Catalog.Товары.Form.ФормаЭлемента" id="f77d63a8-7d90-48ea-b6bd-d2c56d1145e4" configVersion="aa6977fcd852354eb25f194131522aa900000000"/>
-		<Metadata name="Catalog.Товары.Form.ФормаЭлемента.Form" id="f77d63a8-7d90-48ea-b6bd-d2c56d1145e4.0" configVersion="aad306c2fac3434788c6cb9bd9b1caf500000000"/>
-		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="e2ae51e23fd7884d9621310f82ffa07700000000"/>
-		<Metadata name="Document.ПриходнаяНакладная" id="ab57524b-f701-4525-93f5-ecbcb67a959e" configVersion="530cb0d75dd7c74a8877809adc9aac7500000000">
-			<Metadata name="Document.ПриходнаяНакладная.Attribute.Склад" id="097a8004-d59c-4a8c-8c88-2ceabee2d32a"/>
-			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Количество" id="0b017ddd-3a3a-4bc2-ac9b-9fa760af58ca"/>
-			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Товар" id="9ddc48fa-d97e-46e5-9ce1-864b5725a462"/>
-			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары" id="b9f111d0-08cb-450c-89a0-58646cd15a05"/>
-		</Metadata>
-		<Metadata name="Document.ПриходнаяНакладная.Form.ФормаДокумента" id="f1e4b96d-5b94-494a-81ab-81474eed623e" configVersion="d76587034ab96c4fbb566700e52009b900000000"/>
-		<Metadata name="Document.ПриходнаяНакладная.Form.ФормаДокумента.Form" id="f1e4b96d-5b94-494a-81ab-81474eed623e.0" configVersion="571bf3c8057c8f40929e566f330d6f8900000000"/>
-		<Metadata name="Document.ПриходнаяНакладная.ObjectModule" id="ab57524b-f701-4525-93f5-ecbcb67a959e.0" configVersion="2e2ded9ecf54694a809ae72b02b534c500000000"/>
+		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="3efb1a1da8e7a24c8066b418c36aa83d00000000"/>
 		<Metadata name="Language.Русский" id="e2981bd7-7fdf-4548-a1cb-4c805ad4b6dd" configVersion="a8c981838915da4ab6124cefb146d08500000000"/>
-		<Metadata name="Report.Отчет1" id="b0b09656-b49d-4733-bf34-5b87d74d789b" configVersion="2b6a57eef3189a46ab6f6412b8018ea800000000"/>
-		<Metadata name="Report.Отчет1.Form.ФормаНастроек" id="9665031b-9090-4701-9f24-df6496a03428" configVersion="ab20ea55ff46094c98b06c5c4bced57e00000000"/>
-		<Metadata name="Report.Отчет1.Form.ФормаНастроек.Form" id="9665031b-9090-4701-9f24-df6496a03428.0" configVersion="0be3a63f7f951445bd059e16b7aa76e000000000"/>
-		<Metadata name="Report.Отчет1.Template.ОсновнаяСхемаКомпоновкиДанных" id="75ffcd99-7d74-417a-a8e1-5388a9cfb49b" configVersion="dbb4e675019871469cba9bb36a93d61300000000"/>
-		<Metadata name="Report.Отчет1.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="75ffcd99-7d74-417a-a8e1-5388a9cfb49b.0" configVersion="0166a21c87beed49b5238dfa1decb1ad00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
