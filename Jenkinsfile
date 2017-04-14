@@ -1,9 +1,14 @@
+
+def DB_File 
+def versionText
+def versionValue
+
 pipeline{
     agent{
         label 'bdd'
         }
     enviroment{
-        Storage = Credentials('Storage_Trad_CiBot')
+        Storage = credentials('Storage_Trad_CiBot')
     }
     triggers {
         cron("H/5 * * * *")
@@ -26,8 +31,13 @@ pipeline{
         stage ('prepare') {
             steps {
                 timestamps {
-                   cmd("chcp 65001\n deployka loadrepo \"/FF:/mitest/workspace/1c_trade_bdd\" \"F:/mitest/workspace/storage_trade\" -storage-user ${env.StorageUser} -storage-pwd ${env.StoragePwd} -v8version 8.3.10\n deployka dbupdate  \"/FF:/mitest/workspace/1c_trade_bdd\" -allow-warnings -v8version 8.3.10 ")
-                   cmd("deployka dbupdate \"/FF:/mitest/workspace/1c_trade_bdd\" -allow-warnings -v8version 8.3.10\"")
+                    skript {
+                   DB_File = "F:/mitest/workspace/1c_trade_bdd" 
+                   versionText  =  readFile ebcoding 'UTF-8' file: 'src/cf/VERSION'
+                   versiversionValuepnValue =  (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
+                   }
+                   cmd("chcp 65001\n deployka loadrepo \"/${DB_File}\" \"F:/mitest/workspace/storage_trade\" -storage-user ${env.StorageUser} -storage-pwd ${env.StoragePwd} -v8version 8.3.10\n deployka dbupdate  \"/FF:/mitest/workspace/1c_trade_bdd\" -allow-warnings -v8version 8.3.10 -storage-ver ${versionValue} ")
+                   cmd("deployka dbupdate \"/F${DB_File}\" -allow-warnings -v8version 8.3.10\"")
                    }   
                 }  
            }
