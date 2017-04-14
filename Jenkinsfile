@@ -1,9 +1,10 @@
 pipeline{
-
     agent{
         label 'bdd'
         }
-
+    enviroment{
+        Storage = Credentials('Storage_Trad_CiBot')
+    }
     triggers {
         cron("H/5 * * * *")
         }
@@ -24,20 +25,12 @@ pipeline{
         
         stage ('prepare') {
             steps {
-                    timestamps {
-                        bat "chcp 65001\n deployka loadrepo \"/FF:/mitest/workspace/1c_trade_bdd\" \"F:/mitest/workspace/storage_trade\" -storage-user ci-bot -storage-pwd password -v8version 8.3.10\n deployka dbupdate  \"/FF:/mitest/workspace/1c_trade_bdd\" -allow-warnings -v8version 8.3.10 "
-                        }   
-                    }  
-                }
-        
-        stage ('build') {
-            steps {
                 timestamps {
-            cmd("deployka dbupdate \"/FF:/mitest/workspace/1c_trade_bdd\" -allow-warnings -v8version 8.3.10\"")
-                }   
-            }
-        }
-
+                   cmd("chcp 65001\n deployka loadrepo \"/FF:/mitest/workspace/1c_trade_bdd\" \"F:/mitest/workspace/storage_trade\" -storage-user ${env.StorageUser} -storage-pwd ${env.StoragePwd} -v8version 8.3.10\n deployka dbupdate  \"/FF:/mitest/workspace/1c_trade_bdd\" -allow-warnings -v8version 8.3.10 ")
+                   cmd("deployka dbupdate \"/FF:/mitest/workspace/1c_trade_bdd\" -allow-warnings -v8version 8.3.10\"")
+                   }   
+                }  
+           }
         stage('Проверка поведения') {
             steps {
                 timestamps {
