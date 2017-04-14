@@ -10,9 +10,9 @@ pipeline{
     environment{
         Storage = credentials('Storage_Trad_CiBot')
     }
-    triggers {
-        cron("H/5 * * * *")
-        }
+ //   triggers {
+   //     cron("H/5 * * * *")
+     //   }
 
     options {
         buildDiscarder(logRotator(numToKeepStr: '10'))
@@ -28,7 +28,7 @@ pipeline{
             }
         }
         
-        stage ('prepare') {
+        stage ('Загрузка с хранилища и обновление базы') {
             steps {
                 timestamps {
                     script {
