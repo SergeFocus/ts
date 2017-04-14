@@ -63,7 +63,7 @@ pipeline{
                         alwaysLinkToLastBuild: false, 
                         keepAll: false, 
                         reportDir: 'out/publishHTML', 
-                        reportFiles: 'allure-erport/index.html,pickles/Index.html', 
+                        reportFiles: 'allure-report/index.html,pickles/Index.html', 
                         reportName: 'HTML Report'
                     ]
                     step([
