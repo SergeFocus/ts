@@ -10,6 +10,6 @@
    "КаталогOutputAllureБазовый": "$workspaceRoot/out/allure",
    "ВыгружатьСтатусВыполненияСценариевВФайл": true,
    "ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев": "$workspaceRoot/out/BuildStatus.log",
-      "ДелатьОтчетВФорматеCucumberJson": true,
+   "ДелатьОтчетВФорматеCucumberJson": true,
    "КаталогOutputCucumberJson": "$workspaceRoot/out/cucumber"     
 }
