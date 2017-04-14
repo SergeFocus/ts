@@ -67,7 +67,7 @@ pipeline{
                     ]
                     step([
                         $class: 'CucumberReportPublisher',
-                        fileIncludePattern:'*.json'
+                        fileIncludePattern:'*.json',
                         jsonReportDirectory: 'out/Cucumber'
                     ])
                 }   
