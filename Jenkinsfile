@@ -7,7 +7,7 @@ pipeline{
     agent{
         label 'bdd'
         }
-    enviroment{
+    environment{
         Storage = credentials('Storage_Trad_CiBot')
     }
     triggers {
