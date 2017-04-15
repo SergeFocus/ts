@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="f:\mitest\workspace\git\ts\tools\xunitfor1c\tests\smoke" time="0.095" tests="1" failures="0" errors="0" skipped="0">
+	<testsuite name="f:\mitest\workspace\git\ts\tools\xunitfor1c\tests\smoke">
+		<testsuite name="тесты_ОткрытиеФормКонфигурации">
+			<testsuite name="УпрФорма # тесты_ОткрытиеФормКонфигурации">
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="ТестДолжен_ПроверитьБагПлатформыПриОткрытииУправляемойФормыПриОткрытииКоторойЕстьИсключение" time="0.095" status="passed"/>
+			</testsuite>
+		</testsuite>
+	</testsuite>
+</testsuites>
