@@ -1,3 +1,6 @@
 [submodule "tools/vanessa-behavior"]
 	path = tools/vanessa-behavior
 	url = https://github.com/silverbulleters/vanessa-behavior
+[submodule "tools/xUnitFor1C"]
+	path = tools/xUnitFor1C
+	url = https://github.com/xDrivenDevelopment/xUnitFor1C
