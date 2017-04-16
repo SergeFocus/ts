@@ -67,7 +67,7 @@ pipeline{
                         def allurePath = tool name: 'allure', type: 'allure'
                         cmd("${allurePath}/bin/allure generate -o out/publishHTML/allure-report out/allure")
                     }
-                      //  junit allowEmptyResults: true, testResults: 'out/junit.xml'
+                        junit allowEmptyResults: true, testResults: 'out/junit.xml'
                         cmd("pickles -f features -o out/publishHTML/pickles -l ru --df dhtml --sn \"Trade\"")
 
                     publishHTML target: [
