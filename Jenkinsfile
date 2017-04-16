@@ -56,7 +56,7 @@ pipeline{
         stage('Проверка поведения') {
             steps {
                 timestamps {
-            cmd("vrunner vanessa --pathvanessa ./tools/vanessa-behavior/vanessa-behavior.epf --vanessasettings ./tools/VBParams.json  --workspace . -v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
+            cmd("vrunner vanessa --pathvanessa ./tools/vanessa-behavior/vanessa-behavior.epf --vanessasettings ./tools/VBParams.json  --workspace . --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
                 }   
             }
         }
