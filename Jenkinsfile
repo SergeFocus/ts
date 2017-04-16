@@ -43,10 +43,10 @@ pipeline{
                 }  
            }
 
-           stage ('дымовое тестирование') {
+           stage ('Дымовое тестирование') {
                steps {
                    timestamps {
-                       cmd("vrunner xunit f:/mitest/workspace/git/ts/tools/xUnitFor1C/Tests/Smoke --pathxunit f:/mitest/workspace/git/ts/tools/xUnitFor1C/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
+                       cmd("vrunner xunit ./tools/xUnitFor1C/Tests/Smoke --pathxunit ./tools/tools/xUnitFor1C/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
                    }
                }
            }
@@ -66,6 +66,7 @@ pipeline{
                         def allurePath = tool name: 'allure', type: 'allure'
                         cmd("${allurePath}/bin/allure generate -o out/publishHTML/allure-report out/allure")
                     }
+                        junit allowEmptyResults: true, testResults: 'out/junit.xml'
                         cmd("pickles -f features -o out/publishHTML/pickles -l ru --df dhtml --sn \"Trade\"")
 
                     publishHTML target: [
