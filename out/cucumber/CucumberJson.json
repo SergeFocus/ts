@@ -1,0 +1,32 @@
+[
+	{
+		"uri": "ПриходованиеТовара",
+		"keyword": "Feature",
+		"id": "F:\\mitest\\workspace\\git\\ts\\features\\PrihodovanieTovara.feature",
+		"name": "ПриходованиеТовара",
+		"description": "",
+		"tags": [],
+		"elements": [
+			{
+				"keyword": "Scenario",
+				"id": "PrihodovanieTovara-Prihodovanie tovara1",
+				"name": "Приходование товара",
+				"line": 13,
+				"description": "",
+				"tags": [],
+				"type": "scenario",
+				"steps": [
+					{
+						"keyword": "Дано",
+						"name": "Я открыл новый сеанс TestClient или подключил уже существующий",
+						"line": 13,
+						"result": {
+							"status": "pending",
+							"duration": 0
+						}
+					}
+				]
+			}
+		]
+	}
+]

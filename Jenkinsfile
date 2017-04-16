@@ -52,6 +52,14 @@ pipeline{
                }
            }
 
+         stage ('TDD test') {
+               steps {
+                   timestamps {
+                       cmd("vrunner xunit tests --pathxunit tests/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
+          //                      echo 'Привет Мир!' 
+                   }
+               }
+           }
 
         stage('Проверка поведения') {
             steps {

@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="f:\mitest\workspace\git\ts\tools\xunitfor1c\tests\smoke" time="0.095" tests="1" failures="0" errors="0" skipped="0">
+<testsuites name="f:\mitest\workspace\git\ts\tools\xunitfor1c\tests\smoke" time="0.816" tests="8" failures="0" errors="0" skipped="0">
 	<testsuite name="f:\mitest\workspace\git\ts\tools\xunitfor1c\tests\smoke">
 		<testsuite name="тесты_ОткрытиеФормКонфигурации">
 			<testsuite name="УпрФорма # тесты_ОткрытиеФормКонфигурации">
-				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="ТестДолжен_ПроверитьБагПлатформыПриОткрытииУправляемойФормыПриОткрытииКоторойЕстьИсключение" time="0.095" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="Новые : Справочник.Товары.Форма.ФормаЭлемента" time="0.197" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="Существующие : Справочник.Склады.Форма.ФормаЭлемента" time="0.134" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="ТестДолжен_ПроверитьБагПлатформыПриОткрытииУправляемойФормыПриОткрытииКоторойЕстьИсключение" time="0.016" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="Новые : Справочник.Склады.Форма.ФормаЭлемента" time="0.089" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="Отчет.Отчет1.Форма.ФормаНастроек" time="0.085" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="Существующие : Справочник.Товары.Форма.ФормаЭлемента" time="0.102" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="Новые : Документ.ПриходнаяНакладная.Форма.ФормаДокумента" time="0.108" status="passed"/>
+				<testcase classname="УпрФорма # тесты_ОткрытиеФормКонфигурации" name="Существующие : Документ.ПриходнаяНакладная.Форма.ФормаДокумента" time="0.085" status="passed"/>
 			</testsuite>
 		</testsuite>
 	</testsuite>
