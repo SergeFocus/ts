@@ -47,7 +47,7 @@ pipeline{
                steps {
                    timestamps {
           //             cmd("vrunner xunit ./tools/xUnitFor1C/Tests/Smoke --pathxunit ./tools/tools/xUnitFor1C/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
-                                echo 'Привет Мир!' f
+                                echo 'Привет Мир!' 
                    }
                }
            }
