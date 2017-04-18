@@ -95,7 +95,7 @@ pipeline{
                     ])
                 }   
             }
-       stage('Создание Дистрибутива) {
+       stage('Создание Дистрибутива') {
             steps {
                 timestamps {
              echo 'Привет Мир!' 
