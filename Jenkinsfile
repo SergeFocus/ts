@@ -57,7 +57,7 @@ pipeline{
          stage ('TDD test') {
                steps {
                    timestamps {
-                       cmd("\"C:/Program Files (x86)/1cv8/8.3.10.2168/bin/1cv8.exe\" ENTERPRISE /F\"F:/mitest/workspace/1c_trade_bdd\" /RunModeManagedApplication /Execute \"test/xddTestRunner.epf\" /C \"xddRun ЗагрузчикКаталога \"test/Tests\"; xddReport ГенераторОтчетаAllureXML \"out/report-allure.xml\"; xddShutdown;")
+                       cmd("vrunner xunit ./Tests --pathxunit ./tools/xUnitFor1C/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
           
            //            cmd("vrunner xunit tests --pathxunit tests/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
           //                      echo 'Привет Мир!' 
