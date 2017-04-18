@@ -12,7 +12,7 @@
 		<Metadata name="Catalog.Товары" id="d23c2494-5986-466f-bdd5-ea91ef80ee16" configVersion="b4c58f3916663749b1b686bc1f70edd100000000"/>
 		<Metadata name="Catalog.Товары.Form.ФормаЭлемента" id="f77d63a8-7d90-48ea-b6bd-d2c56d1145e4" configVersion="aa6977fcd852354eb25f194131522aa900000000"/>
 		<Metadata name="Catalog.Товары.Form.ФормаЭлемента.Form" id="f77d63a8-7d90-48ea-b6bd-d2c56d1145e4.0" configVersion="aad306c2fac3434788c6cb9bd9b1caf500000000"/>
-		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="39653baad598764797254d7c643eef6900000000"/>
+		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="e2ae51e23fd7884d9621310f82ffa07700000000"/>
 		<Metadata name="Document.ПриходнаяНакладная" id="ab57524b-f701-4525-93f5-ecbcb67a959e" configVersion="530cb0d75dd7c74a8877809adc9aac7500000000">
 			<Metadata name="Document.ПриходнаяНакладная.Attribute.Склад" id="097a8004-d59c-4a8c-8c88-2ceabee2d32a"/>
 			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Количество" id="0b017ddd-3a3a-4bc2-ac9b-9fa760af58ca"/>
