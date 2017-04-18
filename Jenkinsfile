@@ -59,8 +59,6 @@ pipeline{
                    timestamps {
                        cmd("vrunner xunit ./Tests --pathxunit ./tools/xUnitFor1C/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
           
-           //            cmd("vrunner xunit tests --pathxunit tests/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
-          //                      echo 'Привет Мир!' 
                    }
                }
            }
@@ -97,6 +95,16 @@ pipeline{
                     ])
                 }   
             }
+       stage('Создание Дистрибутива) {
+            steps {
+                timestamps {
+             echo 'Привет Мир!' 
+                }   
+            }
+        }
+
+
+
         }
     }        
 
