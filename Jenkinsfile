@@ -43,59 +43,7 @@ pipeline{
                 }  
            }
 
-           stage ('Дымовое тестирование') {
-               steps {
-                   timestamps {
-                       cmd("vrunner xunit ./tools/xUnitFor1C/Tests/Smoke --pathxunit ./tools/xUnitFor1C/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
-          //                      echo 'Привет Мир!' 
-                   }
-               }
-           }
 
-         stage ('TDD test') {
-               steps {
-                   timestamps {
-                       cmd("\"C:/Program Files (x86)/1cv8/8.3.10.2168/bin/1cv8.exe\" ENTERPRISE /F\"F:/mitest/workspace/1c_trade_bdd\" /RunModeManagedApplication /Execute \"test/xddTestRunner.epf\" /C \"xddRun ЗагрузчикКаталога \"test/Tests\"; xddReport ГенераторОтчетаAllureXML \"out/report-allure.xml\"; xddShutdown;")
-          
-           //            cmd("vrunner xunit tests --pathxunit tests/xddTestRunner.epf --reportsxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstdtus.log --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
-          //                      echo 'Привет Мир!' 
-                   }
-               }
-           }
-
-        stage('Проверка поведения') {
-            steps {
-                timestamps {
-            cmd("vrunner vanessa --pathvanessa ./tools/vanessa-behavior/vanessa-behavior.epf --vanessasettings ./tools/VBParams.json  --workspace . --v8version 8.3.10 --ibname  \"/F${File1CDD}\"")
-                }   
-            }
-        }
-
-          stage('Публикация результата') {
-            steps {
-                    script {
-                        def allurePath = tool name: 'allure', type: 'allure'
-                        cmd("${allurePath}/bin/allure generate -o out/publishHTML/allure-report out/allure")
-                    }
-                        junit allowEmptyResults: true, testResults: 'out/junit.xml'
-                        cmd("pickles -f features -o out/publishHTML/pickles -l ru --df dhtml --sn \"Trade\"")
-
-                    publishHTML target: [
-                        allowMissing: false, 
-                        alwaysLinkToLastBuild: false, 
-                        keepAll: false, 
-                        reportDir: 'out/publishHTML', 
-                        reportFiles: 'allure-report/index.html,pickles/Index.html', 
-                        reportName: 'HTML Report'
-                    ]
-                    step([
-                        $class: 'CucumberReportPublisher',
-                        fileIncludePattern:'*.json',
-                        jsonReportDirectory: 'out/Cucumber'
-                    ])
-                }   
-            }
-        }
     }        
 
 def cmd(command) {
