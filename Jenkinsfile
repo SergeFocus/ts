@@ -9,9 +9,9 @@ pipeline{
         label 'bdd'
         }
     
-    environment{
-        Storage = credentials('Storage_Trad_CiBot')
-    }
+ //   environment{
+ //       Storage = credentials('Storage_Trad_CiBot')
+  //  }
  //   triggers {
    //     cron("H/5 * * * *")
      //   }
