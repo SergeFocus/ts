@@ -32,7 +32,8 @@ pipeline{
         
 
 
-    }        
+    }
+}        
 
 def cmd(command) {
     if(isUnix()){
