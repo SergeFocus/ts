@@ -28,7 +28,22 @@ pipeline{
                     echo 'Привет Мир!'    
                 }   
             }
+        }     
+        
+    stage ('Статический анализ') {
+            steps {
+                timestamps {
+                   script{
+                    if(env.BUILD_NUMBER.endsWith("0")) {
+                     build job: 'cyclo', wait: false  
+            }
         }
+            
+                }   
+            }
+        }
+
+
         
         stage ('Загрузка с хранилища и обновление базы') {
             steps {
