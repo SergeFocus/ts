@@ -104,6 +104,7 @@ pipeline{
               cmd("packman  make-cf")
               cmd("packman make-dist ./tools/package.edf -setup")
               cmd("packman zip-dist -name-prefix trade -out out")
+              archiveArtifacts artifacts: 'out/trade*.zip', onlyIfSuccessful: true
                 }   
             }
         }
