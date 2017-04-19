@@ -99,8 +99,8 @@ pipeline{
        stage('Подготовка Дистрибутива') {
             steps {
                 timestamps {
-//${versiversionValue}
-              cmd("packman load-storage F:/mitest/workspace/storage_trade -use-tool1cd -storage-v 7")
+//-storage-v ${versiversionValue}
+              cmd("packman load-storage F:/mitest/workspace/storage_trade -use-tool1cd")
               cmd("packman  make-cf")
 
                 }   
