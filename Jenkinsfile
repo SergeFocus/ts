@@ -44,6 +44,14 @@ pipeline{
             }
         }
 
+          stage ('Проверка синтаксиса') {
+               steps {
+                   timestamps {
+                       cmd("vrunner syntax-check --junitpath ./out --v8version 8.3.10 --ibname  \"/F${File1CDD}\" --mode -ThinClient -WebClient -Server")
+          //                      echo 'Привет Мир!' 
+                   }
+               }
+           }
 
         
         stage ('Загрузка с хранилища и обновление базы') {
