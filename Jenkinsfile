@@ -44,16 +44,7 @@ pipeline{
             }
         }
 
-          stage ('Проверка синтаксиса') {
-               steps {
-                   timestamps {
-                       cmd("vrunner syntax-check --junitpath ./out --v8version 8.3.10 --ibname  \"/F${File1CDD}\" --mode -ThinClient -WebClient -Server")
-          //                      echo 'Привет Мир!' 
-                   }
-               }
-           }
-
-        
+         
         stage ('Загрузка с хранилища и обновление базы') {
             steps {
                 timestamps {
@@ -68,6 +59,17 @@ pipeline{
                    cmd("deployka dbupdate \"/F${File1CDD}\" -allow-warnings -v8version 8.3.10\"")
                    }   
                 }  
+           }
+
+         stage ('Проверка синтаксиса') {
+               steps {
+                   timestamps {
+                       script {
+                   File1CDD = "F:/mitest/workspace/1c_trade_bdd" 
+                   }
+                       cmd("vrunner syntax-check --v8version 8.3.10 --ibname  \"/F${File1CDD}\" --mode -ThinClient -WebClient -Server")      
+                   }
+               }
            }
 
            stage ('Дымовое тестирование') {
