@@ -67,7 +67,8 @@ pipeline{
                        script {
                    File1CDD = "F:/mitest/workspace/1c_trade_bdd" 
                    }
-                       cmd("vrunner syntax-check --v8version 8.3.10 --ibname  \"/F${File1CDD}\" --junitpath . --mode -ThinClient -WebClient -Server")      
+                   //--junitpath .
+                       cmd("vrunner syntax-check --v8version 8.3.10 --ibname  \"/F${File1CDD}\"  --mode -ThinClient -WebClient -Server")      
                    }
                }
            }
