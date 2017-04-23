@@ -49,7 +49,7 @@ pipeline{
                    // echo ${configurationVersion} 
                     withSonarQubeEnv('SonarQube'){
                     echo 'SonarQube'
-                    cpd("${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${configurationVersion}")
+                    //cpd("${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${configurationVersion}")
 
                     }
                 }   
