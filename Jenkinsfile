@@ -46,9 +46,8 @@ pipeline{
                      configurationText  =  readFile encoding: 'UTF-8', file: 'src/cf/Configuration.xml'
                      configurationVersion =  (configurationText =~ /<Version>(.*)<\/Version>/)[0][1]  
                     }
-                   // echo ${configurationVersion} 
-                    withSonarQubeEnv('SonarQube'){
-                    //echo 'SonarQube'
+                   // withSonarQubeEnv('SonarQube'){
+                    echo 'SonarQube'
                     //cpd("${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${configurationVersion}")
 
                     }
