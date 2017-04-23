@@ -48,8 +48,8 @@ pipeline{
                     }
                     withSonarQubeEnv('SonarQube'){
                     echo 'SonarQube'
-                    cpd("sonar-scanner -Dsonar.host.url=https://sonar.silverbulleters.org -Dsonar.login=a50ca9b3a3bfd77a6d3cf184c3f9fbfd8e01c9ef -Dsonar.projectVersion=1.0.0.0")
-                    //cpd("${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${configurationVersion}")
+                    cmd("sonar-scanner -Dsonar.host.url=https://sonar.silverbulleters.org -Dsonar.login=a50ca9b3a3bfd77a6d3cf184c3f9fbfd8e01c9ef -Dsonar.projectVersion=1.0.0.0")
+                    //cmd("${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${configurationVersion}")
 
                     }
                 }   
