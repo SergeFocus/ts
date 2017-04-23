@@ -43,8 +43,8 @@ pipeline{
                      build job: 'cpd', wait: false                 
                         }
                      scannerHome = tool 'Sonar-Scanner' 
-                   //  configurationText  =  readFile encoding: 'UTF-8', file: 'src/cf/Configuration.xml'
-                   //  configurationVersion =  (configurationText =~ /<version>(.*)<\/version>/)[0][1]  
+                     configurationText  =  readFile encoding: 'UTF-8', file: 'src/cf/Configuration.xml'
+                     configurationVersion =  (configurationText =~ /<version>(.*)<\/version>/)[0][1]  
                     }
                     echo 'Привет Мир!'  
                     //withSonarQubeEnv('SonarQube'){
