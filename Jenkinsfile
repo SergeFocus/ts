@@ -47,11 +47,11 @@ pipeline{
                      configurationVersion =  (configurationText =~ /<version>(.*)<\/version>/)[0][1]  
                     }
                    // echo ${configurationVersion} 
-                    withSonarQubeEnv('SonarQube'){
+                    //withSonarQubeEnv('SonarQube'){
   
                         //cpd("${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${configurationVersion}")
 
-                    }
+                   // }
                 }   
             }
         }
