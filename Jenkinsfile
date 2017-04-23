@@ -44,7 +44,7 @@ pipeline{
                         }
                      scannerHome = tool 'Sonar-Scanner' 
                      configurationText  =  readFile encoding: 'UTF-8', file: 'src/cf/Configuration.xml'
-                   //  configurationVersion =  (configurationText =~ /<version>(.*)<\/version>/)[0][1]  
+                     configurationVersion =  (configurationText =~ /<Version>(.*)<\/Version>/)[0][1]  
                     }
                    // echo ${configurationVersion} 
                     //withSonarQubeEnv('SonarQube'){
