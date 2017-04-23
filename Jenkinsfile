@@ -2,6 +2,10 @@ def File1CDD
 def versionText
 def versionValue
 
+def scannerHome
+def configurationText
+def configurationVersion
+
 pipeline{
     
     agent{
@@ -37,9 +41,15 @@ pipeline{
                     if(env.BUILD_NUMBER.endsWith("0")) {
                      build job: 'cyclo', wait: false  
                      build job: 'cpd', wait: false                 
-            }
-        }
-            
+                        }
+                     scannerHome = tool 'Sonar-Scanner' 
+                     configurationText  =  readFile encoding: 'UTF-8', file: 'src/cf/Configuration.xml'
+                     configurationVersion =  (configurationText =~ /<version>(.*)<\/version>/)[0][1]  
+                    }
+                    withSonarQubeEnv('SonarQube'){
+                        cpd("${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${configurationVersion} -Dsonar.host.url=https://sonar.silverbulleters.org -Dsonar.login=a50ca9b3a3bfd77a6d3cf184c3f9fbfd8e01c9ef -X")
+
+                    }
                 }   
             }
         }
