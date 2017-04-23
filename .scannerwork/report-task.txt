@@ -1,0 +1,5 @@
+projectKey=serge.focus:ci-cd
+serverUrl=https://sonar.silverbulleters.org
+dashboardUrl=https://sonar.silverbulleters.org/dashboard/index/serge.focus:ci-cd
+ceTaskId=AVuasbobiDvh2rX8IJIZ
+ceTaskUrl=https://sonar.silverbulleters.org/api/ce/task?id=AVuasbobiDvh2rX8IJIZ
